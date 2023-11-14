@@ -1,0 +1,17 @@
+name: Mi workflow
+
+on: push
+
+jobs:
+  tareas:
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run Python code linting
+      uses: advanced-security/python-lint-code-scanning-action@v1
+      with:
+        linter: pylint
