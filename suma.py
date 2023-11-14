@@ -1,5 +1,5 @@
 def suma(a, b):
   return a + b
-a=2
-b=5
-print("a= ", a, " b= ", b, " a + b= ", suma(a, b))
+x=2
+y=5
+print("a= ", x, " b= ", y, " a + b= ", suma(x, y))
